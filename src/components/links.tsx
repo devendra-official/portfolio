@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { SiLeetcode } from "react-icons/si";
-import { TbBrandDiscord, TbBrandGmail } from "react-icons/tb";
+import { TbBrandDiscord } from "react-icons/tb";
 
 export default function Links() {
     return <>
