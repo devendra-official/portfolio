@@ -3,19 +3,75 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background-dark: #0d1b2a;
+  --container-color: #1b263b;
+  --text-color: #e0e1dd;
+  --card-color: #29303d;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-dark: #0d1b2a;
+    --container-color: #1b263b;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: var(--background-dark);
+  font-family: sans-serif;
+  color: var(--text-color);
+  text-align: justify;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  height: 48px;
+  width: 120px;
+  border-radius: 24px;
+  border: 1px solid #111827;
+}
+
+.card {
+  display: flex;
+  padding: 18px;
+  background-color: var(--card-color);
+  border-radius: 0.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+
+.skill-img {
+  height: 6rem;
+  width: 6rem;
+}
+
+span {
+  color: white;
+  margin-top: 0.5rem;
+}
+
+input,textarea {
+  font-family: sans-serif;
+  font-weight: normal !important;
+  color: black;
 }
